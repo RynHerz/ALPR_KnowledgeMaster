@@ -1,0 +1,165 @@
+{
+  "communities": {
+    "0": [
+      "package_devdependencies",
+      "package_devdependencies_prisma",
+      "package_devdependencies_tsx",
+      "package_devdependencies_types_cors",
+      "package_devdependencies_types_express",
+      "package_devdependencies_types_multer",
+      "package_devdependencies_types_node",
+      "package_devdependencies_typescript",
+      "prisma",
+      "tsx",
+      "types_cors",
+      "types_express",
+      "types_multer",
+      "types_node",
+      "typescript"
+    ],
+    "1": [
+      "ref_src",
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_declaration",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_outdir",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_rootdir",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_include"
+    ],
+    "2": [
+      "src_db_prisma",
+      "src_db_prisma_prisma",
+      "src_index",
+      "src_index_app",
+      "src_routes_detections",
+      "src_routes_detections_formatdetection",
+      "src_routes_detections_router",
+      "src_routes_uploads",
+      "src_routes_uploads_router",
+      "src_routes_uploads_storage",
+      "src_routes_uploads_upload",
+      "src_routes_whitelist",
+      "src_routes_whitelist_formatrule",
+      "src_routes_whitelist_router"
+    ],
+    "3": [
+      "cors",
+      "express",
+      "multer",
+      "package_dependencies",
+      "package_dependencies_cors",
+      "package_dependencies_express",
+      "package_dependencies_multer",
+      "package_dependencies_prisma_client",
+      "package_dependencies_zod",
+      "prisma_client",
+      "zod"
+    ],
+    "4": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_prisma_generate",
+      "package_scripts_prisma_migrate",
+      "package_scripts_start",
+      "package_version"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13333333333333333,
+    "1": 0.14285714285714285,
+    "2": 0.2087912087912088,
+    "3": 0.18181818181818182,
+    "4": 0.2
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 11
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 6
+    },
+    {
+      "id": "src_db_prisma_prisma",
+      "label": "prisma",
+      "degree": 3
+    },
+    {
+      "id": "package_devdependencies_prisma",
+      "label": "prisma",
+      "degree": 2
+    },
+    {
+      "id": "package_devdependencies_tsx",
+      "label": "tsx",
+      "degree": 2
+    },
+    {
+      "id": "package_devdependencies_types_cors",
+      "label": "@types/cors",
+      "degree": 2
+    },
+    {
+      "id": "package_devdependencies_types_express",
+      "label": "@types/express",
+      "degree": 2
+    },
+    {
+      "id": "package_devdependencies_types_multer",
+      "label": "@types/multer",
+      "degree": 2
+    },
+    {
+      "id": "package_devdependencies_types_node",
+      "label": "@types/node",
+      "degree": 2
+    },
+    {
+      "id": "package_devdependencies_typescript",
+      "label": "typescript",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.194) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.148) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `prisma`, `tsx`, `@types/cors` to the rest of the system?",
+      "why": "34 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `devDependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
